@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Hello</title>
+</head>
+<body>
+<h1>Hello, <span th:text="${username}">User</span>!</h1>
+
+<h3>Your authorities:</h3>
+<ul>
+    <li th:each="a : ${authorities}" th:text="${a}">ROLE_USER</li>
+</ul>
+
+
+<h3>Your attributes:</h3>
+<ul>
+    <li th:each="a : ${attributes}" th:text="${a}">ROLE_USER</li>
+</ul>
+
+
+<a href="/">Home</a>
+</body>
+</html>

@@ -1,0 +1,35 @@
+server:
+  ssl:
+    key-store: classpath:saml/knnamaesnew.p12
+    key-store-password: changeme1
+    key-store-type: PKCS12
+    key-alias: knnamaesnew
+    key-password: changeme1
+  port: 8443  
+  servlet:
+    session:
+      cookie:
+        same-site: none
+
+spring:
+  thymeleaf:
+    cache: false
+  security:
+    saml2:
+      relyingparty:
+        registration:
+          myidp:
+            signing:
+              credentials:
+                - private-key-location: classpath:certs/sp-key.pem
+                  certificate-location: classpath:certs/sp-cert.crt
+            assertingparty:
+              metadata-uri: https://dev-35027991.okta.com/app/exkkoq6dmcBmnPKb05d7/sso/saml/metadata
+              verification.credentials:
+                certification-location: classpath:saml/okta.cert
+                singlesignon-url: https://dev-35027991.okta.com/app/dev-35027991_oktademo_1/exkkoq6dmcBmnPKb05d7/sso/saml
+                singlesignon.sign-request: false
+            entity-id: https://localhost:8443
+
+            
+#https://localhost:8443/saml2/service-provider-metadata/myidp

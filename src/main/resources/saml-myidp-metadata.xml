@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?><md:EntityDescriptor xmlns:md="urn:oasis:names:tc:SAML:2.0:metadata" entityID="https://localhost:8443">
+    <md:SPSSODescriptor protocolSupportEnumeration="urn:oasis:names:tc:SAML:2.0:protocol">
+        <md:KeyDescriptor use="signing">
+            <ds:KeyInfo xmlns:ds="http://www.w3.org/2000/09/xmldsig#">
+                <ds:X509Data>
+                    <ds:X509Certificate>MIIEGTCCAwGgAwIBAgIUQDVqUVePxlWCSOEfesVh7HE2Hm0wDQYJKoZIhvcNAQELBQAwgZsxCzAJBgNVBAYTAlVTMQswCQYDVQQIDAJDVDESMBAGA1UEBwwJTmFndWF0dWNrMRUwEwYDVQQKDAxLdWVobmUtTmFnZWwxDDAKBgNVBAsMA0FJUjESMBAGA1UEAwwJbG9jYWxob3N0MTIwMAYJKoZIhvcNAQkBFiNzcmluaXZhcy50YWRpa29uZGFAa3VlaG5lLW5hZ2VsLmNvbTAeFw0yNTA4MjQxNzA4MDZaFw0yOTA1MjAxNzA4MDZaMIGbMQswCQYDVQQGEwJVUzELMAkGA1UECAwCQ1QxEjAQBgNVBAcMCU5hZ3VhdHVjazEVMBMGA1UECgwMS3VlaG5lLU5hZ2VsMQwwCgYDVQQLDANBSVIxEjAQBgNVBAMMCWxvY2FsaG9zdDEyMDAGCSqGSIb3DQEJARYjc3Jpbml2YXMudGFkaWtvbmRhQGt1ZWhuZS1uYWdlbC5jb20wggEiMA0GCSqGSIb3DQEBAQUAA4IBDwAwggEKAoIBAQDVPEOZ7Ajj8ke6HOtOqw+AEa/kPwm8LfgFpFU5zoTnnZD8hkmiG3/K4e3Yqqe2RtNeZd7dYR9FmmQQL882JNbJKCTAJhgj9RTWXo7qixp1J8bkjmI6TeumkZ6wBQIGNv/akTG2HDpElL6sFeSSfSAo/YlGpa2ggp/TCM4D/vQgrWEEky49WUJz59qvXAKxBmrUtrXO1/n0unPiILvWvY7Bqqo0lrQQshGRdWT8ObYD83bB4c676amHdR7jCWTICfmLvBucngzAJZDgz4oXK8R+lNYE1XDl36UpRdJbwGipOsWiiID8ilhtwPIRv9aN3O6BVCgPct5cOLwl9QPbcSzjAgMBAAGjUzBRMB0GA1UdDgQWBBRD4s++ZHpsI/8R1pUtFIaJOZqedzAfBgNVHSMEGDAWgBRD4s++ZHpsI/8R1pUtFIaJOZqedzAPBgNVHRMBAf8EBTADAQH/MA0GCSqGSIb3DQEBCwUAA4IBAQAC22SEzFomJSWyGD+6Y+i5lSbSgHQkTvpRm2BC7aqlpLGngDNqe0cNDdTxXo4+HmGaJ+LvkijN27AQZAPyQbB3963iYl2dhPo7tGZCWBtO5I6E3rYCpNyF3xHeovEEJX9JLGERIZJcJWGIqw5rgZ89ISkQIxqGO5h3QMi5aWOwFZVDgfnI/RQ8XSWhZsRRyOr3Irm7p3bPt/9+9HV2uzJ4wJR7uwGIKnOn9AOwkk9w5eSvWEzBrP7Jh/rBZUcYAGYRU/sIvdfHRItS8RTE3buS2iwKg187VM5SyKaEbm2pYTkASbxIIXi3r7N5PlLFe9NoLMfmSFpgZm9dLpoYTvre</ds:X509Certificate>
+                </ds:X509Data>
+            </ds:KeyInfo>
+        </md:KeyDescriptor>
+        <md:AssertionConsumerService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST" Location="https://localhost:8443/login/saml2/sso/myidp" index="1"/>
+    </md:SPSSODescriptor>
+</md:EntityDescriptor>
